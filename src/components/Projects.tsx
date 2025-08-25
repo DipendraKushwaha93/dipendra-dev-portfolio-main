@@ -7,7 +7,7 @@ const Projects = () => {
   const projects = [
     {
       icon: Dumbbell, // gym replaced with Dumbbell
-      title: 'Flipkart-Inspired E-commerce',
+      title: 'Gym website',
       description: "A modern and responsive gym website designed to showcase fitness programs, training schedules, membership plans, and trainers. It includes an interactive layout with easy navigation, contact form, and visually appealing design to attract fitness enthusiasts.",
       image: '/api/placeholder/400/250',
       technologies: ['JavaScript', 'CSS3', 'HTML5', 'Responsive Design'],
