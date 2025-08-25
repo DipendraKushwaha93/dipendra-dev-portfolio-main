@@ -1,4 +1,4 @@
-import { ExternalLink, Github, Code, Smartphone, ShoppingCart, Car, MapPin } from 'lucide-react';
+import { ExternalLink, Github, Smartphone, ShoppingCart, Cloud, Dumbbell } from 'lucide-react';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -6,9 +6,9 @@ import { Badge } from '@/components/ui/badge';
 const Projects = () => {
   const projects = [
     {
-      icon: gym,
+      icon: Dumbbell, // gym replaced with Dumbbell
       title: 'Flipkart-Inspired E-commerce',
-      description: '"A modern and responsive gym website designed to showcase fitness programs, training schedules, membership plans, and trainers. It includes an interactive layout with easy navigation, contact form, and visually appealing design to attract fitness enthusiasts.".', 
+      description: "A modern and responsive gym website designed to showcase fitness programs, training schedules, membership plans, and trainers. It includes an interactive layout with easy navigation, contact form, and visually appealing design to attract fitness enthusiasts.",
       image: '/api/placeholder/400/250',
       technologies: ['JavaScript', 'CSS3', 'HTML5', 'Responsive Design'],
       github: 'https://github.com/DipendraKushwaha93',
@@ -16,24 +16,23 @@ const Projects = () => {
       featured: true
     },
     {
-      icon: weather,
-      title: 'Weather forecast app',
-      description: '"A responsive weather forecast app that provides real-time weather updates, temperature, humidity, and wind details for any city. It features a clean UI, API integration, and search functionality to deliver accurate forecasts to users.".',
+      icon: Cloud, // weather replaced with Cloud
+      title: 'Weather Forecast App',
+      description: "A responsive weather forecast app that provides real-time weather updates, temperature, humidity, and wind details for any city. It features a clean UI, API integration, and search functionality to deliver accurate forecasts to users.",
       image: '/api/placeholder/400/250',
-      technologies: ['JavaScript', 'HTML5', 'CSS3', 'API ', 'React'],
+      technologies: ['JavaScript', 'HTML5', 'CSS3', 'API', 'React'],
       github: 'https://github.com/DipendraKushwaha93',
-      demo: 'weather-forecasting-sable.vercel.app',
+      demo: 'https://weather-forecasting-sable.vercel.app',
       featured: true
     },
-
     {
       icon: Smartphone,
       title: 'Personal Portfolio Website',
-      description: 'A responsive portfolio website showcasing projects, skills, and professional experience with modern animations.',
+      description: "A responsive portfolio website showcasing projects, skills, and professional experience with modern animations.",
       image: '/api/placeholder/400/250',
       technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Responsive Design'],
       github: 'https://github.com/DipendraKushwaha93',
-      demo: 'dipendra-dev-portfolio-main.vercel.app',
+      demo: 'https://dipendra-dev-portfolio-main.vercel.app',
       featured: false
     }
   ];
@@ -55,9 +54,12 @@ const Projects = () => {
           {/* Projects Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
-              <Card key={index} className={`card-hover border-0 overflow-hidden ${
-                project.featured ? 'lg:col-span-1 bg-gradient-card' : 'bg-card'
-              }`}>
+              <Card
+                key={index}
+                className={`card-hover border-0 overflow-hidden ${
+                  project.featured ? 'lg:col-span-1 bg-gradient-card' : 'bg-card'
+                }`}
+              >
                 {/* Project Image */}
                 <div className="relative h-48 bg-muted overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-hero opacity-10" />
@@ -91,12 +93,7 @@ const Projects = () => {
 
                   {/* Project Links */}
                   <div className="flex space-x-3 pt-2">
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      className="flex-1"
-                      asChild
-                    >
+                    <Button size="sm" variant="outline" className="flex-1" asChild>
                       <a
                         href={project.github}
                         target="_blank"
