@@ -8,7 +8,8 @@ const Projects = () => {
     {
       icon: gym,
       title: 'Flipkart-Inspired E-commerce',
-      description: '"A modern and responsive gym website designed to showcase fitness programs, training schedules, membership plans, and trainers. It includes an interactive layout with easy navigation, contact form, and visually appealing design to attract fitness enthusiasts.": '/api/placeholder/400/250',
+      description: '"A modern and responsive gym website designed to showcase fitness programs, training schedules, membership plans, and trainers. It includes an interactive layout with easy navigation, contact form, and visually appealing design to attract fitness enthusiasts.".', 
+      image: '/api/placeholder/400/250',
       technologies: ['JavaScript', 'CSS3', 'HTML5', 'Responsive Design'],
       github: 'https://github.com/DipendraKushwaha93',
       demo: 'https://dipendrakushwaha93.github.io/gym-training/',
