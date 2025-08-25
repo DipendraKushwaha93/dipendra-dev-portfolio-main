@@ -6,23 +6,22 @@ import { Badge } from '@/components/ui/badge';
 const Projects = () => {
   const projects = [
     {
-      icon: ShoppingCart,
+      icon: gym,
       title: 'Flipkart-Inspired E-commerce',
-      description: 'A comprehensive e-commerce platform with modern UI/UX, featuring product catalogs, shopping cart functionality, and responsive design.',
-      image: '/api/placeholder/400/250',
-      technologies: ['React', 'JavaScript', 'CSS3', 'HTML5', 'Responsive Design'],
-      github: 'https://github.com/dipendrakushwaha/flipkart-clone',
-      demo: 'https://dipendra-flipkart-clone.netlify.app',
+      description: '"A modern and responsive gym website designed to showcase fitness programs, training schedules, membership plans, and trainers. It includes an interactive layout with easy navigation, contact form, and visually appealing design to attract fitness enthusiasts.": '/api/placeholder/400/250',
+      technologies: ['JavaScript', 'CSS3', 'HTML5', 'Responsive Design'],
+      github: 'https://github.com/DipendraKushwaha93',
+      demo: 'https://dipendrakushwaha93.github.io/gym-training/',
       featured: true
     },
     {
-      icon: Car,
-      title: 'Car Showroom Management System',
-      description: 'A full-featured car showroom management system with inventory tracking, customer management, and sales analytics.',
+      icon: weather,
+      title: 'Weather forecast app',
+      description: '"A responsive weather forecast app that provides real-time weather updates, temperature, humidity, and wind details for any city. It features a clean UI, API integration, and search functionality to deliver accurate forecasts to users.".',
       image: '/api/placeholder/400/250',
-      technologies: ['JavaScript', 'HTML5', 'CSS3', 'Local Storage', 'DOM Manipulation'],
-      github: 'https://github.com/dipendrakushwaha/car-showroom',
-      demo: 'https://dipendra-car-showroom.netlify.app',
+      technologies: ['JavaScript', 'HTML5', 'CSS3', 'API ', 'React'],
+      github: 'https://github.com/DipendraKushwaha93',
+      demo: 'weather-forecasting-sable.vercel.app',
       featured: true
     },
 
@@ -32,8 +31,8 @@ const Projects = () => {
       description: 'A responsive portfolio website showcasing projects, skills, and professional experience with modern animations.',
       image: '/api/placeholder/400/250',
       technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Responsive Design'],
-      github: 'https://github.com/dipendrakushwaha/portfolio',
-      demo: 'https://dipendrakushwaha.dev',
+      github: 'https://github.com/DipendraKushwaha93',
+      demo: 'dipendra-dev-portfolio-main.vercel.app',
       featured: false
     }
   ];
